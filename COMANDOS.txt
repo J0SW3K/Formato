@@ -1,0 +1,9 @@
+venv\Scripts\activate.bat
+flask run
+o
+flask --app app run --debug // *(OPCIONAL PARA CAMBIAR PUERTO -p 3300)*
+
+MIGRATE:
+flask db init
+flask db migrate -m "Primera migración"
+flask db upgrade
